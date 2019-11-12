@@ -18,6 +18,7 @@ def Johnson(G, w):
         h = v.d
     for edge in G_mark.E:
         # something something
+        edge.w = w + h(u) - h(v)
     D = [[0 for i in range(len(G.V))] for j in range(len(G.V))]
     for u in G.V:
         Dijkstras(G, w_hat, u)
