@@ -3,9 +3,11 @@ import random
 
 
 class Node:
-    def __init__(self, d=None, prev=None, debug=True, name=None):
+    def __init__(self, d=None, prev=None, adj=None, debug=True, name=None):
         if debug:
             self.name = name
+        if adj is None:
+            self.adj = []
         self.d = d
         self.prev = prev
 
