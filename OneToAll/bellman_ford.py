@@ -2,8 +2,6 @@ import math
 from graph import *
 
 
-
-
 def Bellman_Ford(G, w, s):
     """
     Much dank algorithm to compute epic graphs and their acycleness

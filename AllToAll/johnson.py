@@ -11,8 +11,8 @@ def Johnson(G, w):
     :return:
     """
     # Her må det gjøres en del
-    G_mark = None
-    s = None
+    G_mark = G
+    s = G.E[0]
     BF = Bellman_Ford(G_mark, w, s)
     for v in G_mark:
         h = v.d

@@ -10,6 +10,7 @@ class Node:
             self.adj = []
         self.d = d
         self.prev = prev
+        self.h = None
 
 
 class Edge:
