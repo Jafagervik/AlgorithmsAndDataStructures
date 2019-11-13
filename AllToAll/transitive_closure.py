@@ -27,6 +27,7 @@ def Transitive_Closure(G):
 
     return T
 
+
 def Transitive_Closure_Simple(G):
     """
 
@@ -42,7 +43,7 @@ def Transitive_Closure_Simple(G):
             else:
                 T[i][j] = 0
 
-    #Grunntilfellet er nå på plass
+    # Grunntilfellet er nå på plass
     for k in range(1, n):
         for i in range(1, n):
             for j in range(1, n):

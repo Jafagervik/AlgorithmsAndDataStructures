@@ -3,14 +3,24 @@ import random
 
 
 class Node:
-    def __init__(self, d=None, prev=None, adj=None, debug=True, name=None):
+    def __init__(self, d=None, prev=None, adj=None, color=None, debug=True, name=None):
         if debug:
             self.name = name
         if adj is None:
             self.adj = []
+        if color is not None:
+            self.color = color
         self.d = d
         self.prev = prev
         self.h = None
+        self.f = 0 # only used to mark finished in DFS
+
+
+class HuffmanNode:
+    def __init__(self, left=None, right=None, freq=None):
+        self.left = left
+        self.right = right
+        self.freq = freq
 
 
 class Edge:
