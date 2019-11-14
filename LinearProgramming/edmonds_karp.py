@@ -33,8 +33,20 @@ def Edmonds_Karp(G, s, t):
         if pred[t] is not None:
             # Aka we found an augmenting path, see how much flow we can send
             df = inf
-            df = min(df, edge.cap - edge.flow)
+            edge = pred[t]
+            while edge is not None:
+                df = min(df, edge.cap - edge.flow)
+                edge = pred[edge.s]
 
-            edge.flow += df
-            edge.rev_flow -= df
+            edge = pred[t]
+            while edge is not None:
+                edge.flow += df
+                edge.rev_flow -= df
+
+            flow += df
+
+    return flow
+
+#def BreadthFirstSearch(capacity, neighbours, flows, start, end):
+
 
