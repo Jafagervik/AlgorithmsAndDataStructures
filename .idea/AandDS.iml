@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/DynamicProgramming" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GraphAlgorithms" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RecursiveExamples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DivideAndConquer" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
